@@ -1,0 +1,6 @@
+#SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -pipe -Wno-psabi -Wall -Wextra -Wno-ignored-qualifiers -Wconversion -Wformat-security -fstack-protector -ftrapv -D_FORTIFY_SOURCE=1")
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -pipe -Wno-psabi -fstack-protector -ftrapv -D_FORTIFY_SOURCE=1")
+SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} -z now")
+include_directories(include)
+add_subdirectory(Calculator)
+add_subdirectory(Remote)
